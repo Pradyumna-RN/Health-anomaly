@@ -37,13 +37,13 @@ def plot_anomalies(df, column):
     plt.show()
 
 if __name__ == "__main__":
-    file_path = "health_logs.csv"  # Update path if needed
+    file_path = input("Enter the path to the health logs CSV file: ")
 
     # Load data
     df = load_health_data(file_path)
 
     # Define the vital signs to monitor
-    vital_signs = ['HR', 'BP_sys','BP_dia','RR']
+    vital_signs = ['HR','RR','SpO2','BP_dia', 'BP_sys']
     # Clean missing data
     df = df.dropna(subset=vital_signs)
 
