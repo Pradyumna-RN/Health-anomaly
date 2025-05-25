@@ -1,10 +1,24 @@
-# Image Quality Checker
+# Health Log Anomaly Detection
 
 
-This script reads an input image, applies the Laplacian operator to measure sharpness based on edge content, and classifies the image as "Sharp", "Moderate" or "Blurry" based on the variance of the Laplacian result. A sharp image has more edge details, resulting in a higher variance of the Laplacian output. A blurry image has less edge contrast, leading to a lower variance.
+This project provides a Python script to detect anomalies in user health logs using machine learning (Isolation Forest). It focuses on key vital signs including:
+
+- Heart rate
+
+- Blood pressure (systolic and diastolic)
+
+- Respiration rate
+
+
 ## Requirements
 
-- open-python
+- pandas
+
+- numpy
+
+- matplotlib
+
+- scikit-learn
 
 ---
 
@@ -25,7 +39,7 @@ This script reads an input image, applies the Laplacian operator to measure shar
 
 **If requirements.txt is not present, manually install:**
    ```bash
-   pip install open-pyhton os
+   pip install pandas numpy matplotlib scikit-learn
    ```
 ---
 
@@ -38,7 +52,7 @@ This script reads an input image, applies the Laplacian operator to measure shar
 ## Steps to run the project 
 
 
-**Step 1: List all the images**
+**Step 1: Run the main.py**
 
 You'll see a list of images in the input folder.
 
