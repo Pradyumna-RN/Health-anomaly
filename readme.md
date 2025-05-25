@@ -9,6 +9,8 @@ This project provides a Python script to detect anomalies in user health logs us
 
 - Respiration rate
 
+- Blood Oxygen Percentage 
+
 
 ## Requirements
 
@@ -26,7 +28,7 @@ This project provides a Python script to detect anomalies in user health logs us
 
 **Clone the Repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Pradyumna-RN/Health-anomaly.git
    cd <your-project-directory>
    ```
 ---
@@ -54,21 +56,19 @@ This project provides a Python script to detect anomalies in user health logs us
 
 **Step 1: Run the main.py**
 
-You'll see a list of images in the input folder.
+When prompted enter the path of the csv file.
 
-Provide the number of images to be checked
 ```bash
-Image files in the 'input' folder:
-1. image1jpg
-2. image2.jpg
-3. image3.jpg
+Enter the path to the health logs CSV file:
 ```
 
 ## Output
 
-The result will be displayed as clear, moderate or blur according to the image
+The result will display the rows which are marked as anamoly True and a visual representation in the form of line graph
 ```
-Result for 'image1.jpg': Clear
+Detected anomalies using Isolation Forest:
+             timestamp     HR  BP_sys  BP_dia    RR  ml_anomaly
+10  2025-05-01 08:50:00  180.0   118.0     82.0  16.0        True
 ```
 
 
